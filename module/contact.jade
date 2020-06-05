@@ -8,8 +8,8 @@
       .col-6.col-md-3
         .media
           i.fa.mr-2.mt-1 
-          a(href='https://www.districtcouncils.gov.hk/central/tc_chi/members/info/dc_member_list_detail.php?member_id={item[2]}')img(src="img/{item[2]}.jpg",style="width:200px",alt="{item[0]}")
+          img(src="img/dcmember/{item[2]}.jpg",style="width:100px",alt="{item[0]}")
           .media-body
             span.name: b #{item[0]}
-            p(style="line-height:1.4em;font-size:0.6em;color:#444") 民選議員（ #{item[1]}）
+            a(href="https://www.districtcouncils.gov.hk/central/tc_chi/members/info/dc_member_list_detail.php?member_id={item[2]}", style="line-height:1.4em;font-size:0.6em;color:#444", target="_blank") 民選議員（ #{item[1]}）
 
