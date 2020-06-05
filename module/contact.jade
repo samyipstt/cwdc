@@ -1,0 +1,15 @@
+//- module
+.section.section-trivia: .inner
+  .text-center: h2#contact 議員資料
+  p 按圖連結至區議會網站議員聯絡資料。
+  br
+  .row
+    each item in [["鄭麗琼議員 主席","衛城","2943"],["楊浩然議員 副主席","寶翠","2964"],["張啟昕議員","正街","2957"],["何致宏議員","水街","2958"],["許智峯議員","中環","2945"],[" 甘乃威議員, MH","上環","2946"],["梁晃維議員","觀龍","2959"],["伍凱欣議員","東華","2956"],["吳兆康議員","半山東","2952"],["彭家浩議員","西環","2960"],["黃健菁議員","堅摩","2961"],["黃永志議員","西營盤","2962"],["任嘉兒議員","大學","2963"],["葉錦龍議員","石塘咀","2965"],["楊哲安議員","山頂","2955"]]
+      .col-6.col-md-3
+        .media
+          i.fa.mr-2.mt-1 
+          a(href='https://www.districtcouncils.gov.hk/central/tc_chi/members/info/dc_member_list_detail.php?member_id={item[2]}')img(src="img/{item[2]}.jpg",style="width:200px",alt="{item[0]}")
+          .media-body
+            span.name: b #{item[0]}
+            p(style="line-height:1.4em;font-size:0.6em;color:#444") 民選議員（ #{item[1]}）
+
