@@ -91,6 +91,9 @@ h2 {
 .section-features p {
   font-size: 0.9em;
   color: #555;
+}.section-schedule p {
+  font-size: 0.9em;
+  color: #555;
 }
 .section-footer a {
   color: #9be;
