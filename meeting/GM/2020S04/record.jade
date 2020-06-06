@@ -1,7 +1,7 @@
 //- module
 .section.section-trivia: .inner
-  .text-center: h2#meeting_g 中西區區議會 大會日程及文件
-  p 以下中西區區議會大會日程及文件可供居民下載閱覽。
+  .text-center: h2#meeting_g 中西區區議會 大會錄音 
+  p 以下中西區區議會大會錄音及文件可供居民下載閱覽。
   br
   .row
    .col.col-md-3 
@@ -20,7 +20,7 @@
     p 討論文件
    .col.col-md-3 
     p 投票結果
-   each item in [["第四次","2020-05-28（四）","下午2時30分","—","—","—","—","—"],["第四次特別","2020-06-06（六）","下午2時30分","2020_S4/agenda.odt","—","—","—","—"]]
+   each item in [["第四次特別","2020-06-06（六）","下午2時30分","2020S04","—","—","—","—"]]
      .row
       .col.col-md-3
        span.name: b #{item[0]}
@@ -29,7 +29,7 @@
       .col.col-md-3
        span.name: b #{item[2]}
       .col.col-md-3
-       span.name: a(href="/cwdc/meeting/meeting_g/#{item[3]}") 下載
+       span.name: a(href="/meeting/GM/#{item[3]}/agenda.odt") 下載
       .col.col-md-3
        span.name: b #{item[4]}
       .col.col-md-3
