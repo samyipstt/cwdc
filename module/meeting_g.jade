@@ -4,46 +4,30 @@
   p 以下中西區區議會大會日程及文件可供居民下載閱覽。
   br
   .row
-   .col-1
-   .col-1
-   .col-1
-    p 會議
-   .col-1
-    p 日期
-   .col-1
-    p 時間
-   .col-1
+   .col-2
+    p 會議日期/時間
+   .col-2
     p 會議議程
-   .col-1
+   .col-2
     p 會議記錄
-   .col-1
+   .col-2
     p 會議錄音
-   .col-1
+   .col-2
     p 討論文件
-   .col-1
+   .col-2
     p 投票結果
-   .col-1
-   .col-1
-   each item in [["第四次","2020-05-28（四）","下午2時30分","2020R04","—","202GM0R04","2020GMR04","—"],["第四次特別","2020-06-06（六）","下午2時30分","2020S04","—","2020GMS04","2020GMS04","—"]]
+   each item in [["第四次 2020-05-28（四）下午2時30分","2020R04","—","202GM0R04","2020GMR04","—"],["第四次特別 2020-06-06（六）下午2時30分","2020S04","—","2020GMS04","2020GMS04","—"]]
      .row
-      .col-1
-      .col-1
-      .col-1
+      .col-2
        span.name: b #{item[0]}
-      .col-1
-       span.name: b #{item[1]}
-      .col-1
+      .col-2
+       span.name: a(href="/meeting/meeting_g/GM/#{item[1]}/agenda.odt") 下載
+      .col-2
        span.name: b #{item[2]}
-      .col-1
-       span.name: a(href="/meeting/meeting_g/GM/#{item[3]}/agenda.odt") 下載
-      .col-1
-       span.name: b #{item[4]}
-      .col-1
-       span.name: a(href="/#{item[5]}record.html") 下載
-      .col-1
-       span.name: a(href="/#{item[6]}record.html") 下載
-      .col-1
-       span.name: b #{item[7]}
-      .col-1
-      .col-1
+      .col-2
+       span.name: a(href="/#{item[3]}record.html") 下載
+      .col-2
+       span.name: a(href="/#{item[4]}record.html") 下載
+      .col-2
+       span.name: b #{item[5]}
 
