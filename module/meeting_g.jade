@@ -1,14 +1,38 @@
 //- module
 .section.section-trivia: .inner
-  .text-center: h2#meeting_g 提供的選項有哪些？
-  p 如果你的專案做了許多事想要火力展示，卻又不適合寫一大堆東西的時候，做成迷你表列會更適合。
+  .text-center: h2#meeting_g 中西區區議會 大會日程及文件
+  p 以下中西區區議會大會日程及文件可供居民下載閱覽。
   br
   .row
-    each item in [["Runtime","birthday-cake"],["Redis","bus"],["Scale","camera"],["Add-ons","calculator"],["Storage","bullhorn"],["AI","check-circle"],["Extensibility","cloud"],["Github","binoculars"]]
+   .col-6.col-md-3 
+    p 會議
+   .col-6.col-md-3 
+    p 日期
+   .col-6.col-md-3 
+    p 時間
+   .col-6.col-md-3 
+    p 會議議程
+   .col-6.col-md-3 
+    p 會議記錄
+   .col-6.col-md-3 
+    p 會議錄音
+   .col-6.col-md-3 
+    p 討論文件
+   each item in [["第四次","2020-05-28（四）","下午2時30分","—","—","—","—"],["第四次特別","2020-06-06（六）","下午2時30分","/2020_S4/agenda.odt","—","—","—"]]
+     .row
       .col-6.col-md-3
-        .media
-          i.fa.mr-2.mt-1(class="fa-" + item[1])
-          .media-body
-            span.name: b #{item[0]}
-            p(style="line-height:1.4em;font-size:0.6em;color:#444") 可以簡單介紹一下 #{item[0]}，長度不拘但各項間可以對齊。
+       span.name: b #{item[0]}
+      .col-6.col-md-3
+       span.name: b #{item[1]}
+      .col-6.col-md-3
+       span.name: b #{item[2]}
+      .col-6.col-md-3
+       span.name: a(href="/cwdc/meeting/meeting_g/#{item[3]}") 下載
+      .col-6.col-md-3
+       span.name: b #{item[4]}
+      .col-6.col-md-3
+       span.name: b #{item[5]}
+      .col-6.col-md-3
+       span.name: b #{item[6]}
+
 
